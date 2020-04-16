@@ -22,9 +22,11 @@
 - `git reste --hard HEAD && git pull`: git 코드 강제로 받아오기
 - `git config --global user.name "user_name"` :git계정 NAME 변경하기
 - `git config --global user.emai "user_email"` :git계정 Email 변경하기
+-  `git config --list` : 정상적으로 적용됐는지 확인
 - `git stash/git stash save "description"` : 작업코드 임시저장, branch 바꾸기
 - `git stash pop` :마지막으로 임시저장한 작업코드 가져오기
 - `git status` :변경된 것들이 있나 확인
+- `git add -all` : 변경된 것들 모두 추가
 
 
 ## 2. 깃을 사용하는 이유
