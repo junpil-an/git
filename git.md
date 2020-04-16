@@ -2,12 +2,12 @@
 
 ## 1.git 정리
 
-● git init : git 생성하기
-● git clone git_path : 브랜치 선택하기(주소입력)
-● git checkout -t remote_path/branch_name : 원격 브랜치 선택하기
-● git branch -r : 원격 브랜치 목록보기
-● git branch -a : 로컬 브랜치 목록보기
-● git branch -m branch_name change_branch_name : 브랜치 이름 바꾸기
+###● git init : git 생성하기
+###● git clone git_path : 브랜치 선택하기(주소입력)
+###● git checkout -t remote_path/branch_name : 원격 브랜치 선택하기
+###● git branch -r : 원격 브랜치 목록보기
+###● git branch -a : 로컬 브랜치 목록보기
+###● git branch -m branch_name change_branch_name : 브랜치 이름 바꾸기
 ● git branch -d branch_name : 브랜치 삭제하기
 ● git push remote_name --delete branch_name : 원격 브랜치 삭제하기
 ● git add file_path :수정한 코드 선택하기(git add *)
