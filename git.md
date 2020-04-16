@@ -26,5 +26,11 @@
 - `git stash pop` :마지막으로 임시저장한 작업코드 가져오기
 
 
-
+##2. 깃을 사용하는 이유
+ - 빠른 협업환경
+ - 누가 언제 수정했는지 코드리뷰 가능
+ - IssueTracker 및 Migrate 연동 지원
+ - GitHub 이용해 자신의 git을 쉽게 전파가능
+ - Countinuous Integration(지속적인 통합) 지원
+ - VS,Eclipse,Android S 등 많은 부분에서 Git 연동 제공
 
