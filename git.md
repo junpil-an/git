@@ -2,7 +2,7 @@
 
 ## 1.git 정리
 
-- git init : git 생성하기
+- 'git init' : git 생성하기
 - git clone git_path : 브랜치 선택하기(주소입력)
 - git checkout -t remote_path/branch_name : 원격 브랜치 선택하기
 - git branch -r : 원격 브랜치 목록보기
