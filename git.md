@@ -130,7 +130,89 @@ git reset HEAD^ --soft
   ```shell
   git push origin :new
   ```
-##Git merge & rebase
+## Git merge & rebase
+  - 브랜치를 사용하는 과정에서 가장 중요한 merge & rebase
+  - 서로 다른 branch에서 서로 다른 코드가 개발 ,실제 배포에서 합쳐야 할때
+  - 병합 방식은 `git merge`,`git rebase`가 존재
+  - `master`에서 `sub` branch 가 생성 `master`branch에서 `sub` branch를 merge할때
+  ```shell
+  * master -> some_file.txt의 내용
+  * 1번째 단계 HEAD
+  I'm a file
+  ```
+  ```shell
+  *sub -> some_file.txt의 내용
+  * 2번쨰 단계 HEAD(최신)
+  I'm a file
+ 
+  Inserted new line from the sub branch.
+```
+- 자세한 부분은 해당 Git의 Tutorial/Merge를 참고
+```shell
+git checkout -f master
+git merge sub
+//현재 branch maseter, 대상 branch
+//master에서 sub를 merge한다
+//HEAD -> master
+//sub -> sub
+```
+-merge 이후 master 파일을 보면 아래와 같음
+```shell
+*merge 이후 master -> some_file.txt
+I' a file.
+
+Inserted new line from the sub branch.
+```
+
+## 충돌과 해결
+  - git으로 merge,rebase 수행시 충돌이 발생 할 수 있음
+  - 같은 조상을 기준으로 서로 다른 두개의 브랜치가 같은 소스코드 변경했을 떄
+  - 아래는 샘플 환경 Tutorial/Conflict
+  ```shell
+  *master -> some_file.txt의 내영
+  Apple
+  ```
+  - 위는 `master` branch의 some_file.txt의 내용이다
+  - 아래는 해당 branch를 복제한 `sub` branch 이고 복제 이후 한번 내용을 수정함
+  ```shell
+  *sub -> some_file.txt 의 내용
+  * 2번째 단계 HEAD 
+  Banana
+  ```
+  - 이후 `master`에서도 내용을 변경하여 버전을 업데이트 함
+  
+  ```shell
+   *master -> some_file.txt의 내용
+   *2번째 단계 HEAD(sub랑 단계까 겹침)
+   Strawberry
+   ```
+  - 둘 버전 모두 같으나 같은 라인에서 변경사항이 발생, 이경우 **충돌**이 발생함
+  - 충돌이 발생한 some_file.txt를 열어보면 아래와 같음
+  ```shell
+  *merge 이후 master -> some_file.txt(충돌)
+  <<<<<<<< HEAD
+  Strawberry
+  ======
+  Banana
+  >>>>>>>> sub
+  ```
+  - `HEAD`는 현재 branch를 의미
+  - HEAD와 sub 각각 내용을 보여주고 있는데 꺽쇠(<,>),이퀄(=)기호가 없도록 문장 하나를 선택해서
+  반영해야 충돌이 해결될 수 있음
+  
+ ```shell
+ *merge 이후 master -> some_file.txt(수정)
+ Strawberry
+ ```
+- 수정이 되었으면 `git add`,`git commit`으로 충돌을 해결
+```shell
+git add *
+git commit -m "Solved the conflict issue"
+  
+```
+  
+  
+  
   
   
   
