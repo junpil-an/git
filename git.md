@@ -1,6 +1,6 @@
 # GIT 
 
-## 1.git 정리
+## git 명령어 
 
 - `git init` : git 생성하기
 - `git clone git_path` : 브랜치 선택하기(주소입력)
