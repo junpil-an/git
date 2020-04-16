@@ -2,9 +2,9 @@
 
 ## 1.git 정리
 
-- git init : git 생성하기
-- git clone git_path : 브랜치 선택하기(주소입력)
-- git checkout -t remote_path/branch_name : 원격 브랜치 선택하기
+- `git init` : git 생성하기
+- `git clone git_path` : 브랜치 선택하기(주소입력)
+- `git checkout -t remote_path/branch_name` : 원격 브랜치 선택하기
 - git branch -r : 원격 브랜치 목록보기
 - git branch -a : 로컬 브랜치 목록보기
 - git branch -m branch_name change_branch_name : 브랜치 이름 바꾸기
@@ -25,16 +25,6 @@
 - git stash/git stash save "description" : 작업코드 임시저장, branch 바꾸기
 - git stash pop :마지막으로 임시저장한 작업코드 가져오기
 
- '''shell
- 
- git config --
-'''
-
-
-
- ```shell
-    git clone https://github.com/KennethanCeyer/tutorial.git
-```
 
 
 
