@@ -25,13 +25,16 @@
 - git stash/git stash save "description" : 작업코드 임시저장, branch 바꾸기
 - git stash pop :마지막으로 임시저장한 작업코드 가져오기
 
-'''shell
+ '''shell
+ 
  git config --
 '''
 
 
 
-
+ ```shell
+    git clone https://github.com/KennethanCeyer/tutorial.git
+```
 
 
 
