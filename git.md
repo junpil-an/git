@@ -27,7 +27,8 @@
 - `git stash pop` :마지막으로 임시저장한 작업코드 가져오기
 - `git status` :변경된 것들이 있나 확인
 - `git add -all` : 변경된 것들 모두 추가
-
+- `git push --delete -n`: 원격저장소 삭제
+- `git remote -v` : 세부 내용 열람
 
 ## 2. 깃을 사용하는 이유
  - 빠른 협업환경
