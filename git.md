@@ -8,11 +8,11 @@
 ###● git branch -r : 원격 브랜치 목록보기
 ###● git branch -a : 로컬 브랜치 목록보기
 ###● git branch -m branch_name change_branch_name : 브랜치 이름 바꾸기
-● git branch -d branch_name : 브랜치 삭제하기
-● git push remote_name --delete branch_name : 원격 브랜치 삭제하기
-● git add file_path :수정한 코드 선택하기(git add *)
-● git commit -m "수정 내용" :코드 설명 적기
-● git push remote_name branch_name: add 하고 commit한 코드 git server에 보내기
+- git branch -d branch_name : 브랜치 삭제하기
+- git push remote_name --delete branch_name : 원격 브랜치 삭제하기
+- git add file_path :수정한 코드 선택하기(git add *)
+- git commit -m "수정 내용" :코드 설명 적기
+●- git push remote_name branch_name: add 하고 commit한 코드 git server에 보내기
   (git push origin master)
 ● git pull - git서버에서 최신코드 받아오기 & merge
 ● git fecth - git 서버에서 최신코드 받아오기
